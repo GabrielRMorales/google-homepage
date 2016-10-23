@@ -15,25 +15,73 @@
         <style>
        body{
         /*background-color:blue;*/
-        width: 900px;
+        width: 1200px;/*could be 900px*/
         margin: 0 auto;
         text-align: center;
+        min-height: 96%;
        }
-       main {
-
-       }
+       
+        nav ul {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            text-align:right;
+            margin-left: 90%; 
+            width:175px;                    
+        }    
+        ul li {
+            display:inline;
+            padding: 4px;
+            font-size: 16px;
+        }  
        #container {
-        margin-top: 25%;
+        margin-top: 20%;
         display: inline-block;
         /*background-color:red;*/
         width: 500px;
         height: 250px;
        }
+       input[type="text"] {
+          display: block;
+          margin: 0;
+          width: 100%;
+          font-family: sans-serif;
+          font-size: 20px;
+          border: 1px solid grey;
+          appearance: none;
+          box-shadow: none;
+          border-radius: none;
+        }
        .searchbutton{
-        display:inline;
-        
+        display:inline;        
         padding: 12px;
+        border-width: 0;
+        background-color: #efefef;
        }
+         footer{
+            height: 60px;
+            margin-top:30px;
+            background-color: #efefef;
+            text-align: center;
+            position: absolute;
+            right:0;
+            bottom:0;
+            left:0;
+        }
+        #left  {
+            margin: 0;
+            padding: 4px;
+            padding-bottom:0;
+            float:left;  
+            }
+        #right  {
+            margin:0;
+            padding: 4px;
+            padding-bottom:0;      
+            float:right;
+            }
+        }
         </style>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -43,8 +91,16 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-   
-       <main>
+        <nav>
+        <ul>
+            <li>Gmail</li>
+            <li>Images</li>
+            <li>G+</li>
+            <li><img src="googleappicon.png">
+
+        </ul>
+        </nav>
+        <main>
         <div id="container">
         <img src="https://i.kinja-img.com/gawker-media/image/upload/s--pEKSmwzm--/c_scale,fl_progressive,q_80,w_800/1414228815325188681.jpg" width="300px" height="150px">
         <br>
@@ -55,7 +111,22 @@
         <button class="searchbutton">I'm Feeling Lucky</button>
         </div>
         </main>
-       
+        <footer>
+        <div id="left">
+        <ul>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>About</li>
+        </ul>
+        </div>
+        <div id="right">
+        <ul > 
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+
+        </ul>
+        </div></footer>
        
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
